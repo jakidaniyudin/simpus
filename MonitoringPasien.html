@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring Pasien</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+
+        .table-bordered th, .table-bordered td {
+            border: 1px solid #000 !important;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        /* Custom width for the "Kondisi Umum" column */
+        .kondisi-umum {
+            width: 300px; /* Adjusted width for "Kondisi Umum" */
+        }
+
+        /* Custom width for other columns */
+        .other-column {
+            width: 80px; /* Adjusted width for other columns */
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <div class="row">
+        <div class="col-md-8">
+            <h4 class="text-center">MONITORING PASIEN SELAMA PEMBERIAN ANESTESI</h4>
+            <h4 class="text-center">DAN TINDAKAN PEMBEDAHAN</h4>
+        </div>
+        <div class="col-md-4">
+            <table class="table table-bordered">
+            <tr>
+                <td colspan="9"><p class="text-center">No Rekam Medis</p></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+        </div>
+      </div>
+
+
+    <div class="form-group">
+        <label for="namaPasien">Nama Pasien :</label>
+        <input type="text" class="form-control" id="namaPasien">
+    </div>
+    <div class="form-group">
+        <label for="umur">Umur :</label>
+        <input type="text" class="form-control" id="umur">
+    </div>
+    <div class="form-group">
+        <label for="alamat">Alamat :</label>
+        <input type="text" class="form-control" id="alamat">
+    </div>
+    <div class="form-group">
+        <label for="diagnosa">Diagnosa :</label>
+        <input type="text" class="form-control" id="diagnosa">
+    </div>
+    <div class="form-group">
+        <label for="kondisiPasien">Kondisi Pasien :</label>
+        <input type="text" class="form-control" id="kondisiPasien">
+    </div>
+
+    <h4>Hasil Monitoring :</h4>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Tanggal</th>
+                <th>Jam</th>
+                <th class="kondisi-umum">Kondisi Umum</th>
+                <th class="other-column">Tensi</th>
+                <th class="other-column">Nadi</th>
+                <th class="other-column">RR</th>
+                <th class="other-column">Suhu</th>
+                <th class="other-column">Ket</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+                <td><textarea class="form-control" rows="4" style="width: 100%;"></textarea></td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+                <td><textarea class="form-control" rows="4" style="width: 100%;"></textarea></td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+                <td><textarea class="form-control" rows="4" style="width: 100%;"></textarea></td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+                <td><input type="text" class="form-control" style="width: 100%;"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p class="text-right">Songgon,</p>
+    <p class="text-right">Pelaksana Monitoring</p>
+</div>
+</body>
+</html>

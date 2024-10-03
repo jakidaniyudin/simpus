@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Tindakan Operasi</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .form-container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+
+        .table-bordered th, .table-bordered td {
+            border: 1px solid #000 !important;
+        }
+
+        .custom-input {
+            border: none;
+            border-bottom: 1px dotted #000;
+            width: 100%;
+            display: inline-block;
+        }
+
+        .checkbox-table input {
+            margin: 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h4 class="text-center">LAPORAN TINDAKAN OPERASI</h4>
+    <table class="table table-bordered">
+        <tr>
+            <td colspan="2">
+                <div class="row">
+                    <div class="col-md-4"><p>NAMA PASIEN:</p></div>
+                    <div class="col-md-8"><input type="text" class="custom-input"></div>
+                </div>
+            </td>
+            <td colspan="2">
+                <div class="row">
+                    <div class="col-md-4"><p>NO. RM:</p></div>
+                    <div class="col-md-8"><input type="text" class="custom-input"></div>
+                </div>
+            </td> 
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div class="row">
+                    <div class="col-md-2"><p>UNIT RUANGAN:</p></div>
+                    <div class="col-md-10"><input type="text" class="custom-input"></div>
+                </div>
+            </td>
+            <td colspan="2">
+                <div class="row">
+                    <div class="col-md-2"><p>UMUR:</p></div>
+                    <div class="col-md-10"><input type="text" class="custom-input"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>NAMA DOKTER :</td>
+            <td><input type="text" class="custom-input"></td>
+            <td>NAMA PERAWAT :</td>
+            <td><input type="text" class="custom-input"></td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div class="row">
+                    <div class="col-md-2"><p>JENIS ANESTESI:</p></div>
+                    <div class="col-md-10"><input type="text" class="custom-input"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div class="row">
+                    <div class="col-md-4"><p>NAMA / MACAM OPERASI / TINDAKAN:</p></div>
+                    <div class="col-md-8"><input type="text" class="custom-input"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><P>TANGGAL OPERASI / TINDAKAN :</P><input type="text" class="custom-input"></td>
+            <td><p> JAM TINDAKAN DIMULAI :</p><input type="text" class="custom-input"></td>
+            <td><p>JAM TINDAKAN SELESAI :</p><input type="text" class="custom-input"></td>
+            <td><p>LAMA OPERASI / TINDAKAN :</p><input type="text" class="custom-input"></td>
+        </tr>
+    </table>
+
+    <h4>DIAGNOSA PRABEDAH</h4>
+    <input type="text" class="custom-input" style="width: 100%;">
+
+    <h4>DIAGNOSA PASCA BEDAH</h4>
+    <input type="text" class="custom-input" style="width: 100%;">
+
+    <h4>TINDAKAN PEMBEDAHAN</h4>
+    <table class="table table-bordered checkbox-table">
+        <tr>
+            <td>1.</td>
+            <td><input type="text" class="custom-input"></td>
+            <td rowspan="4" class="text-center">
+                <p>KLASIFIKASI</p>
+                <p>EMERGENCY <input type="checkbox"></p>
+                <p>EFEKTIF <input type="checkbox"></p>
+                <p>POLIKLINIK <input type="checkbox"></p>
+            </td>
+            <td rowspan="4" class="text-center">
+                <p>MAYOR <input type="checkbox"></p>
+                <p>MEDIUM <input type="checkbox"></p>
+                <p>MINOR <input type="checkbox"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td><input type="text" class="custom-input"></td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td><input type="text" class="custom-input"></td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td><input type="text" class="custom-input"></td>
+        </tr>
+    </table>
+
+    <h4>LAPORAN TINDAKAN / OPERASI</h4>
+    <textarea class="form-control" rows="5"></textarea>
+
+    <p>Tanda tangan dan nama dokter yang mengerjakan:</p>
+    <input type="text" class="custom-input" style="width: 100%;">
+</div>
+</body>
+</html>
